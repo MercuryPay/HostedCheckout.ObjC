@@ -1,0 +1,457 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C2161D43181074EE005763BE /* iPadApp.png in Resources */ = {isa = PBXBuildFile; fileRef = C2161D42181074EE005763BE /* iPadApp.png */; };
+		C2161D45181077DE005763BE /* white.png in Resources */ = {isa = PBXBuildFile; fileRef = C2161D44181077DE005763BE /* white.png */; };
+		C2EC5DE1180C5E7F00883E97 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2EC5DE0180C5E7F00883E97 /* UIKit.framework */; };
+		C2EC5DE3180C5E8000883E97 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2EC5DE2180C5E7F00883E97 /* Foundation.framework */; };
+		C2EC5DE5180C5E8000883E97 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2EC5DE4180C5E8000883E97 /* CoreGraphics.framework */; };
+		C2EC5DEB180C5E8000883E97 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C2EC5DE9180C5E8000883E97 /* InfoPlist.strings */; };
+		C2EC5DED180C5E8000883E97 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C2EC5DEC180C5E8000883E97 /* main.m */; };
+		C2EC5DF3180C5E8000883E97 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = C2EC5DF2180C5E8000883E97 /* Default.png */; };
+		C2EC5DF5180C5E8000883E97 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C2EC5DF4180C5E8000883E97 /* Default@2x.png */; };
+		C2EC5DF7180C5E8100883E97 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C2EC5DF6180C5E8100883E97 /* Default-568h@2x.png */; };
+		C2EC5E10180C643000883E97 /* iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2EC5E0F180C643000883E97 /* iPad.storyboard */; };
+		C2EC5E52180C6B5400883E97 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C2EC5E47180C6B5400883E97 /* AppDelegate.m */; };
+		C2EC5E53180C6B5400883E97 /* DisplayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2EC5E49180C6B5400883E97 /* DisplayViewController.m */; };
+		C2EC5E54180C6B5400883E97 /* InitializeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2EC5E4B180C6B5400883E97 /* InitializeViewController.m */; };
+		C2EC5E55180C6B5400883E97 /* ReceiptViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2EC5E4D180C6B5400883E97 /* ReceiptViewController.m */; };
+		C2EC5E56180C6B5400883E97 /* TutorialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2EC5E4F180C6B5400883E97 /* TutorialViewController.m */; };
+		C2EC5E57180C6B5400883E97 /* VerifyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2EC5E51180C6B5400883E97 /* VerifyViewController.m */; };
+		C2EC5E5A180C773B00883E97 /* DisplayUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2EC5E59180C773B00883E97 /* DisplayUIViewController.m */; };
+		C2EC5E5D180C77F600883E97 /* ResponseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2EC5E5C180C77F600883E97 /* ResponseViewController.m */; };
+		C2EC5E5F180C7A0300883E97 /* diLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = C2EC5E5E180C7A0300883E97 /* diLogo.png */; };
+		C2EC5E62180C7ADB00883E97 /* poweredByGray.png in Resources */ = {isa = PBXBuildFile; fileRef = C2EC5E61180C7ADB00883E97 /* poweredByGray.png */; };
+		C2EC5E64180C7AED00883E97 /* cancelButton.png in Resources */ = {isa = PBXBuildFile; fileRef = C2EC5E63180C7AED00883E97 /* cancelButton.png */; };
+		C2EC5E66180C7AFE00883E97 /* button_step1.png in Resources */ = {isa = PBXBuildFile; fileRef = C2EC5E65180C7AFE00883E97 /* button_step1.png */; };
+		C2EC5E68180C7B1B00883E97 /* presstheblue.png in Resources */ = {isa = PBXBuildFile; fileRef = C2EC5E67180C7B1B00883E97 /* presstheblue.png */; };
+		C2EC5E6A180C7B2B00883E97 /* poweredbyLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = C2EC5E69180C7B2B00883E97 /* poweredbyLogo.png */; };
+		C2EC5E6C180C7B4100883E97 /* clip_curl.png in Resources */ = {isa = PBXBuildFile; fileRef = C2EC5E6B180C7B4100883E97 /* clip_curl.png */; };
+		C2EC5E6E180C7B6000883E97 /* swipe4mo-blue.png in Resources */ = {isa = PBXBuildFile; fileRef = C2EC5E6D180C7B6000883E97 /* swipe4mo-blue.png */; };
+		C2EC5E70180C7C4400883E97 /* swipe4mo.png in Resources */ = {isa = PBXBuildFile; fileRef = C2EC5E6F180C7C4400883E97 /* swipe4mo.png */; };
+		C2EC5E72180C7C5200883E97 /* button_step2.png in Resources */ = {isa = PBXBuildFile; fileRef = C2EC5E71180C7C5200883E97 /* button_step2.png */; };
+		C2EC5E74180C7C6000883E97 /* button_step3.png in Resources */ = {isa = PBXBuildFile; fileRef = C2EC5E73180C7C6000883E97 /* button_step3.png */; };
+		C2EC5E76180C7D7F00883E97 /* responsecode_3.png in Resources */ = {isa = PBXBuildFile; fileRef = C2EC5E75180C7D7F00883E97 /* responsecode_3.png */; };
+		C2EC5E78180C7D8D00883E97 /* responsecode_2.png in Resources */ = {isa = PBXBuildFile; fileRef = C2EC5E77180C7D8D00883E97 /* responsecode_2.png */; };
+		C2EC5E7A180C7DB200883E97 /* responsecode_1.png in Resources */ = {isa = PBXBuildFile; fileRef = C2EC5E79180C7DB200883E97 /* responsecode_1.png */; };
+		C2EC5E7C180C7DD700883E97 /* next_step_button.png in Resources */ = {isa = PBXBuildFile; fileRef = C2EC5E7B180C7DD700883E97 /* next_step_button.png */; };
+		C2EC5E7E180C7E9D00883E97 /* receipt.png in Resources */ = {isa = PBXBuildFile; fileRef = C2EC5E7D180C7E9D00883E97 /* receipt.png */; };
+		C2EC5E80180C7EAC00883E97 /* receiptButton.png in Resources */ = {isa = PBXBuildFile; fileRef = C2EC5E7F180C7EAC00883E97 /* receiptButton.png */; };
+		C2EC5E82180C7ECF00883E97 /* startover.png in Resources */ = {isa = PBXBuildFile; fileRef = C2EC5E81180C7ECF00883E97 /* startover.png */; };
+		C2EC5E84180C7EF400883E97 /* paymentStatusBack.png in Resources */ = {isa = PBXBuildFile; fileRef = C2EC5E83180C7EF400883E97 /* paymentStatusBack.png */; };
+		C2EC5E8B180C872800883E97 /* HCMercuryHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = C2EC5E8A180C872800883E97 /* HCMercuryHelper.m */; };
+		C2EC5E91180C95A000883E97 /* VerifyReturnViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2EC5E90180C959D00883E97 /* VerifyReturnViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C2161D42181074EE005763BE /* iPadApp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iPadApp.png; sourceTree = "<group>"; };
+		C2161D44181077DE005763BE /* white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = white.png; sourceTree = "<group>"; };
+		C2EC5DDD180C5E7F00883E97 /* Mercury Hosted Checkout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mercury Hosted Checkout.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2EC5DE0180C5E7F00883E97 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C2EC5DE2180C5E7F00883E97 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C2EC5DE4180C5E8000883E97 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C2EC5DE8180C5E8000883E97 /* Mercury Hosted Checkout-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Mercury Hosted Checkout-Info.plist"; sourceTree = "<group>"; };
+		C2EC5DEA180C5E8000883E97 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C2EC5DEC180C5E8000883E97 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C2EC5DEE180C5E8000883E97 /* Mercury Hosted Checkout-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Mercury Hosted Checkout-Prefix.pch"; sourceTree = "<group>"; };
+		C2EC5DF2180C5E8000883E97 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		C2EC5DF4180C5E8000883E97 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		C2EC5DF6180C5E8100883E97 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		C2EC5E0F180C643000883E97 /* iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iPad.storyboard; sourceTree = "<group>"; };
+		C2EC5E46180C6B5400883E97 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Mercury.HostedCheckout.ObjC/Classes/AppDelegate.h; sourceTree = SOURCE_ROOT; };
+		C2EC5E47180C6B5400883E97 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Mercury.HostedCheckout.ObjC/Classes/AppDelegate.m; sourceTree = SOURCE_ROOT; };
+		C2EC5E48180C6B5400883E97 /* DisplayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DisplayViewController.h; path = Mercury.HostedCheckout.ObjC/Classes/DisplayViewController.h; sourceTree = SOURCE_ROOT; };
+		C2EC5E49180C6B5400883E97 /* DisplayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DisplayViewController.m; path = Mercury.HostedCheckout.ObjC/Classes/DisplayViewController.m; sourceTree = SOURCE_ROOT; };
+		C2EC5E4A180C6B5400883E97 /* InitializeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InitializeViewController.h; path = Mercury.HostedCheckout.ObjC/Classes/InitializeViewController.h; sourceTree = SOURCE_ROOT; };
+		C2EC5E4B180C6B5400883E97 /* InitializeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InitializeViewController.m; path = Mercury.HostedCheckout.ObjC/Classes/InitializeViewController.m; sourceTree = SOURCE_ROOT; };
+		C2EC5E4C180C6B5400883E97 /* ReceiptViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ReceiptViewController.h; path = Mercury.HostedCheckout.ObjC/Classes/ReceiptViewController.h; sourceTree = SOURCE_ROOT; };
+		C2EC5E4D180C6B5400883E97 /* ReceiptViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ReceiptViewController.m; path = Mercury.HostedCheckout.ObjC/Classes/ReceiptViewController.m; sourceTree = SOURCE_ROOT; };
+		C2EC5E4E180C6B5400883E97 /* TutorialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TutorialViewController.h; path = Mercury.HostedCheckout.ObjC/Classes/TutorialViewController.h; sourceTree = SOURCE_ROOT; };
+		C2EC5E4F180C6B5400883E97 /* TutorialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TutorialViewController.m; path = Mercury.HostedCheckout.ObjC/Classes/TutorialViewController.m; sourceTree = SOURCE_ROOT; };
+		C2EC5E50180C6B5400883E97 /* VerifyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VerifyViewController.h; path = Mercury.HostedCheckout.ObjC/Classes/VerifyViewController.h; sourceTree = SOURCE_ROOT; };
+		C2EC5E51180C6B5400883E97 /* VerifyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VerifyViewController.m; path = Mercury.HostedCheckout.ObjC/Classes/VerifyViewController.m; sourceTree = SOURCE_ROOT; };
+		C2EC5E58180C773B00883E97 /* DisplayUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DisplayUIViewController.h; path = Mercury.HostedCheckout.ObjC/Classes/DisplayUIViewController.h; sourceTree = SOURCE_ROOT; };
+		C2EC5E59180C773B00883E97 /* DisplayUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DisplayUIViewController.m; path = Mercury.HostedCheckout.ObjC/Classes/DisplayUIViewController.m; sourceTree = SOURCE_ROOT; };
+		C2EC5E5B180C77F600883E97 /* ResponseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ResponseViewController.h; path = Mercury.HostedCheckout.ObjC/Classes/ResponseViewController.h; sourceTree = SOURCE_ROOT; };
+		C2EC5E5C180C77F600883E97 /* ResponseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ResponseViewController.m; path = Mercury.HostedCheckout.ObjC/Classes/ResponseViewController.m; sourceTree = SOURCE_ROOT; };
+		C2EC5E5E180C7A0300883E97 /* diLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = diLogo.png; sourceTree = "<group>"; };
+		C2EC5E61180C7ADB00883E97 /* poweredByGray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = poweredByGray.png; sourceTree = "<group>"; };
+		C2EC5E63180C7AED00883E97 /* cancelButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cancelButton.png; sourceTree = "<group>"; };
+		C2EC5E65180C7AFE00883E97 /* button_step1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_step1.png; sourceTree = "<group>"; };
+		C2EC5E67180C7B1B00883E97 /* presstheblue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = presstheblue.png; sourceTree = "<group>"; };
+		C2EC5E69180C7B2B00883E97 /* poweredbyLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = poweredbyLogo.png; sourceTree = "<group>"; };
+		C2EC5E6B180C7B4100883E97 /* clip_curl.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clip_curl.png; sourceTree = "<group>"; };
+		C2EC5E6D180C7B6000883E97 /* swipe4mo-blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "swipe4mo-blue.png"; sourceTree = "<group>"; };
+		C2EC5E6F180C7C4400883E97 /* swipe4mo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = swipe4mo.png; sourceTree = "<group>"; };
+		C2EC5E71180C7C5200883E97 /* button_step2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_step2.png; sourceTree = "<group>"; };
+		C2EC5E73180C7C6000883E97 /* button_step3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_step3.png; sourceTree = "<group>"; };
+		C2EC5E75180C7D7F00883E97 /* responsecode_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = responsecode_3.png; sourceTree = "<group>"; };
+		C2EC5E77180C7D8D00883E97 /* responsecode_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = responsecode_2.png; sourceTree = "<group>"; };
+		C2EC5E79180C7DB200883E97 /* responsecode_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = responsecode_1.png; sourceTree = "<group>"; };
+		C2EC5E7B180C7DD700883E97 /* next_step_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = next_step_button.png; sourceTree = "<group>"; };
+		C2EC5E7D180C7E9D00883E97 /* receipt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = receipt.png; sourceTree = "<group>"; };
+		C2EC5E7F180C7EAC00883E97 /* receiptButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = receiptButton.png; sourceTree = "<group>"; };
+		C2EC5E81180C7ECF00883E97 /* startover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = startover.png; sourceTree = "<group>"; };
+		C2EC5E83180C7EF400883E97 /* paymentStatusBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = paymentStatusBack.png; sourceTree = "<group>"; };
+		C2EC5E89180C872700883E97 /* HCMercuryHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HCMercuryHelper.h; path = Mercury.HostedCheckout.ObjC/Classes/HCMercuryHelper.h; sourceTree = SOURCE_ROOT; };
+		C2EC5E8A180C872800883E97 /* HCMercuryHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HCMercuryHelper.m; path = Mercury.HostedCheckout.ObjC/Classes/HCMercuryHelper.m; sourceTree = SOURCE_ROOT; };
+		C2EC5E8F180C959C00883E97 /* VerifyReturnViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VerifyReturnViewController.h; path = Mercury.HostedCheckout.ObjC/Classes/VerifyReturnViewController.h; sourceTree = SOURCE_ROOT; };
+		C2EC5E90180C959D00883E97 /* VerifyReturnViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VerifyReturnViewController.m; path = Mercury.HostedCheckout.ObjC/Classes/VerifyReturnViewController.m; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C2EC5DDA180C5E7F00883E97 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2EC5DE1180C5E7F00883E97 /* UIKit.framework in Frameworks */,
+				C2EC5DE3180C5E8000883E97 /* Foundation.framework in Frameworks */,
+				C2EC5DE5180C5E8000883E97 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C2EC5DD4180C5E7F00883E97 = {
+			isa = PBXGroup;
+			children = (
+				C2EC5DE6180C5E8000883E97 /* Mercury.HostedCheckout.ObjC */,
+				C2EC5DDF180C5E7F00883E97 /* Frameworks */,
+				C2EC5DDE180C5E7F00883E97 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C2EC5DDE180C5E7F00883E97 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C2EC5DDD180C5E7F00883E97 /* Mercury Hosted Checkout.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C2EC5DDF180C5E7F00883E97 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C2EC5DE0180C5E7F00883E97 /* UIKit.framework */,
+				C2EC5DE2180C5E7F00883E97 /* Foundation.framework */,
+				C2EC5DE4180C5E8000883E97 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C2EC5DE6180C5E8000883E97 /* Mercury.HostedCheckout.ObjC */ = {
+			isa = PBXGroup;
+			children = (
+				C2EC5DFD180C60DB00883E97 /* Classes */,
+				C2EC5DE7180C5E8000883E97 /* Supporting Files */,
+			);
+			path = Mercury.HostedCheckout.ObjC;
+			sourceTree = "<group>";
+		};
+		C2EC5DE7180C5E8000883E97 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C2EC5E60180C7A7400883E97 /* Images */,
+				C2EC5DFE180C60F300883E97 /* Storyboards */,
+				C2EC5DEC180C5E8000883E97 /* main.m */,
+				C2EC5DE8180C5E8000883E97 /* Mercury Hosted Checkout-Info.plist */,
+				C2EC5DE9180C5E8000883E97 /* InfoPlist.strings */,
+				C2EC5DEE180C5E8000883E97 /* Mercury Hosted Checkout-Prefix.pch */,
+				C2EC5DF2180C5E8000883E97 /* Default.png */,
+				C2EC5DF4180C5E8000883E97 /* Default@2x.png */,
+				C2EC5DF6180C5E8100883E97 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C2EC5DFD180C60DB00883E97 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				C2EC5E46180C6B5400883E97 /* AppDelegate.h */,
+				C2EC5E47180C6B5400883E97 /* AppDelegate.m */,
+				C2EC5E89180C872700883E97 /* HCMercuryHelper.h */,
+				C2EC5E8A180C872800883E97 /* HCMercuryHelper.m */,
+				C2EC5E4E180C6B5400883E97 /* TutorialViewController.h */,
+				C2EC5E4F180C6B5400883E97 /* TutorialViewController.m */,
+				C2EC5E4A180C6B5400883E97 /* InitializeViewController.h */,
+				C2EC5E4B180C6B5400883E97 /* InitializeViewController.m */,
+				C2EC5E5B180C77F600883E97 /* ResponseViewController.h */,
+				C2EC5E5C180C77F600883E97 /* ResponseViewController.m */,
+				C2EC5E48180C6B5400883E97 /* DisplayViewController.h */,
+				C2EC5E49180C6B5400883E97 /* DisplayViewController.m */,
+				C2EC5E58180C773B00883E97 /* DisplayUIViewController.h */,
+				C2EC5E59180C773B00883E97 /* DisplayUIViewController.m */,
+				C2EC5E50180C6B5400883E97 /* VerifyViewController.h */,
+				C2EC5E51180C6B5400883E97 /* VerifyViewController.m */,
+				C2EC5E8F180C959C00883E97 /* VerifyReturnViewController.h */,
+				C2EC5E90180C959D00883E97 /* VerifyReturnViewController.m */,
+				C2EC5E4C180C6B5400883E97 /* ReceiptViewController.h */,
+				C2EC5E4D180C6B5400883E97 /* ReceiptViewController.m */,
+			);
+			name = Classes;
+			path = ../../../../../Desktop/Classes;
+			sourceTree = "<group>";
+		};
+		C2EC5DFE180C60F300883E97 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				C2EC5E0F180C643000883E97 /* iPad.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		C2EC5E60180C7A7400883E97 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				C2161D44181077DE005763BE /* white.png */,
+				C2161D42181074EE005763BE /* iPadApp.png */,
+				C2EC5E83180C7EF400883E97 /* paymentStatusBack.png */,
+				C2EC5E81180C7ECF00883E97 /* startover.png */,
+				C2EC5E7F180C7EAC00883E97 /* receiptButton.png */,
+				C2EC5E7D180C7E9D00883E97 /* receipt.png */,
+				C2EC5E7B180C7DD700883E97 /* next_step_button.png */,
+				C2EC5E79180C7DB200883E97 /* responsecode_1.png */,
+				C2EC5E77180C7D8D00883E97 /* responsecode_2.png */,
+				C2EC5E75180C7D7F00883E97 /* responsecode_3.png */,
+				C2EC5E73180C7C6000883E97 /* button_step3.png */,
+				C2EC5E71180C7C5200883E97 /* button_step2.png */,
+				C2EC5E6F180C7C4400883E97 /* swipe4mo.png */,
+				C2EC5E6D180C7B6000883E97 /* swipe4mo-blue.png */,
+				C2EC5E6B180C7B4100883E97 /* clip_curl.png */,
+				C2EC5E69180C7B2B00883E97 /* poweredbyLogo.png */,
+				C2EC5E67180C7B1B00883E97 /* presstheblue.png */,
+				C2EC5E65180C7AFE00883E97 /* button_step1.png */,
+				C2EC5E63180C7AED00883E97 /* cancelButton.png */,
+				C2EC5E61180C7ADB00883E97 /* poweredByGray.png */,
+				C2EC5E5E180C7A0300883E97 /* diLogo.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C2EC5DDC180C5E7F00883E97 /* Mercury Hosted Checkout */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C2EC5DFA180C5E8100883E97 /* Build configuration list for PBXNativeTarget "Mercury Hosted Checkout" */;
+			buildPhases = (
+				C2EC5DD9180C5E7F00883E97 /* Sources */,
+				C2EC5DDA180C5E7F00883E97 /* Frameworks */,
+				C2EC5DDB180C5E7F00883E97 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Mercury Hosted Checkout";
+			productName = Mercury.HostedCheckout.ObjC;
+			productReference = C2EC5DDD180C5E7F00883E97 /* Mercury Hosted Checkout.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C2EC5DD5180C5E7F00883E97 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = Mercury;
+			};
+			buildConfigurationList = C2EC5DD8180C5E7F00883E97 /* Build configuration list for PBXProject "Mercury Hosted Checkout" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C2EC5DD4180C5E7F00883E97;
+			productRefGroup = C2EC5DDE180C5E7F00883E97 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C2EC5DDC180C5E7F00883E97 /* Mercury Hosted Checkout */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C2EC5DDB180C5E7F00883E97 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2EC5DEB180C5E8000883E97 /* InfoPlist.strings in Resources */,
+				C2EC5DF3180C5E8000883E97 /* Default.png in Resources */,
+				C2EC5DF5180C5E8000883E97 /* Default@2x.png in Resources */,
+				C2EC5DF7180C5E8100883E97 /* Default-568h@2x.png in Resources */,
+				C2EC5E10180C643000883E97 /* iPad.storyboard in Resources */,
+				C2EC5E5F180C7A0300883E97 /* diLogo.png in Resources */,
+				C2EC5E62180C7ADB00883E97 /* poweredByGray.png in Resources */,
+				C2EC5E64180C7AED00883E97 /* cancelButton.png in Resources */,
+				C2EC5E66180C7AFE00883E97 /* button_step1.png in Resources */,
+				C2EC5E68180C7B1B00883E97 /* presstheblue.png in Resources */,
+				C2EC5E6A180C7B2B00883E97 /* poweredbyLogo.png in Resources */,
+				C2EC5E6C180C7B4100883E97 /* clip_curl.png in Resources */,
+				C2EC5E6E180C7B6000883E97 /* swipe4mo-blue.png in Resources */,
+				C2EC5E70180C7C4400883E97 /* swipe4mo.png in Resources */,
+				C2EC5E72180C7C5200883E97 /* button_step2.png in Resources */,
+				C2EC5E74180C7C6000883E97 /* button_step3.png in Resources */,
+				C2EC5E76180C7D7F00883E97 /* responsecode_3.png in Resources */,
+				C2EC5E78180C7D8D00883E97 /* responsecode_2.png in Resources */,
+				C2EC5E7A180C7DB200883E97 /* responsecode_1.png in Resources */,
+				C2EC5E7C180C7DD700883E97 /* next_step_button.png in Resources */,
+				C2EC5E7E180C7E9D00883E97 /* receipt.png in Resources */,
+				C2EC5E80180C7EAC00883E97 /* receiptButton.png in Resources */,
+				C2EC5E82180C7ECF00883E97 /* startover.png in Resources */,
+				C2EC5E84180C7EF400883E97 /* paymentStatusBack.png in Resources */,
+				C2161D43181074EE005763BE /* iPadApp.png in Resources */,
+				C2161D45181077DE005763BE /* white.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C2EC5DD9180C5E7F00883E97 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2EC5DED180C5E8000883E97 /* main.m in Sources */,
+				C2EC5E52180C6B5400883E97 /* AppDelegate.m in Sources */,
+				C2EC5E53180C6B5400883E97 /* DisplayViewController.m in Sources */,
+				C2EC5E54180C6B5400883E97 /* InitializeViewController.m in Sources */,
+				C2EC5E55180C6B5400883E97 /* ReceiptViewController.m in Sources */,
+				C2EC5E56180C6B5400883E97 /* TutorialViewController.m in Sources */,
+				C2EC5E57180C6B5400883E97 /* VerifyViewController.m in Sources */,
+				C2EC5E5A180C773B00883E97 /* DisplayUIViewController.m in Sources */,
+				C2EC5E5D180C77F600883E97 /* ResponseViewController.m in Sources */,
+				C2EC5E8B180C872800883E97 /* HCMercuryHelper.m in Sources */,
+				C2EC5E91180C95A000883E97 /* VerifyReturnViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C2EC5DE9180C5E8000883E97 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C2EC5DEA180C5E8000883E97 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C2EC5DF8180C5E8100883E97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C2EC5DF9180C5E8100883E97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C2EC5DFB180C5E8100883E97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Mercury.HostedCheckout.ObjC/Mercury Hosted Checkout-Prefix.pch";
+				INFOPLIST_FILE = "Mercury.HostedCheckout.ObjC/Mercury Hosted Checkout-Info.plist";
+				PRODUCT_NAME = "Mercury Hosted Checkout";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C2EC5DFC180C5E8100883E97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Mercury.HostedCheckout.ObjC/Mercury Hosted Checkout-Prefix.pch";
+				INFOPLIST_FILE = "Mercury.HostedCheckout.ObjC/Mercury Hosted Checkout-Info.plist";
+				PRODUCT_NAME = "Mercury Hosted Checkout";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C2EC5DD8180C5E7F00883E97 /* Build configuration list for PBXProject "Mercury Hosted Checkout" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2EC5DF8180C5E8100883E97 /* Debug */,
+				C2EC5DF9180C5E8100883E97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C2EC5DFA180C5E8100883E97 /* Build configuration list for PBXNativeTarget "Mercury Hosted Checkout" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2EC5DFB180C5E8100883E97 /* Debug */,
+				C2EC5DFC180C5E8100883E97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C2EC5DD5180C5E7F00883E97 /* Project object */;
+}
