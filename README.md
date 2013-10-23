@@ -33,14 +33,14 @@ Create a NSMutableDictionary and add all the Key Value Pairs.
     [dictionaryReq setObject:@"On" forKey:@"CancelButton"];
 ```
   
-##Process: Process the Transaction
+##Process: Process Initialize Payment Transaction
 
-Create MercuryHelper object and call the transctionFromDictionary method with the NSMutalbeDictionary and merchant's password.
+Create HCMercuryHelper object and call the initializePaymentFromDictionary method with the NSMutalbeDictionary and merchant's password.
 
 ```
-    MercuryHelper *mgh = [MercuryHelper new];
+    HCMercuryHelper *mgh = [HCMercuryHelper new];
     mgh.delegate = self;
-    [mgh transctionFromDictionary:dictionaryReq andPassword:@"xyz"];
+    [mgh initializePaymentFromDictionary:dictionaryReq andPassword:@"Y6@Mepyn!r0LsMNq"];
 ```
 
 ##Parse: Parse the Response
