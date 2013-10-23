@@ -120,22 +120,22 @@ Create a NSMutableDictionary and add all the Key Value Pairs.
   
 ###Process: Process the Transaction
 
-Create MercuryHelper object and call the transctionFromDictionary method with the NSMutalbeDictionary and merchant's password.
+Create MercuryHelper object and call the verifyPaymentFromDictionary method with the NSMutalbeDictionary and merchant's password.
 
 ```
     MercuryHelper *mgh = [MercuryHelper new];
     mgh.delegate = self;
-    [mgh transctionFromDictionary:dictionaryReq andPassword:@"xyz"];
+    [mgh verifyPaymentFromDictionary:dictionaryReq andPassword:@"xyz"];
 ```
 
 ###Parse: Parse the Response
 
-Parse the Response using in the transactionDidFinish delegate.
+Parse the Response using in the hcTransactionDidFinish delegate.
 
 Approved transactions will have a CmdStatus equal to "Approved".
 
 ```
--(void) transactionDidFinish:(NSDictionary *)result {
+-(void) hcTransactionDidFinish:(NSDictionary *)result {
     
     if ([result objectForKey:@"CmdStatus"]
       && [[result objectForKey:@"CmdStatus"] isEqualToString:@"Approved"]) {
