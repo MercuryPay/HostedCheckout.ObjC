@@ -104,29 +104,6 @@ Listen to the shouldStartLoadWithRequest of the UIWebViewDelegate to determine i
 }
 ```
 
-##Parse: Parse the Response
-
-Parse the Response using in the transactionDidFinish delegate.
-
-Approved transactions will have a CmdStatus equal to "Approved".
-
-```
--(void) transactionDidFinish:(NSDictionary *)result {
-    
-    if ([result objectForKey:@"CmdStatus"]
-      && [[result objectForKey:@"CmdStatus"] isEqualToString:@"Approved"]) {
-      
-      // Approved logic here
-      
-    } else {
-      
-      // Declined logic here
-      
-    }
-    
-}
-```
-
 #Step 3: Verify Payment
 
 To simplify our Web service calls we have created an HCMercuryHelper library to submit, process, and parse the responses.
