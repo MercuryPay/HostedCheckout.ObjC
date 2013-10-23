@@ -83,7 +83,7 @@ Display the HostedCheckout Web page in a UIWebView control. The URL ends with th
     [_viewWeb loadRequest:requestObj];  
 ```
 
-Listen to the shouldStartLoadWithRequest of the UIWebViewDelegate to determine if the user completed the transaction or cancelled the request.
+Listen to the shouldStartLoadWithRequest of the UIWebViewDelegate to determine if the user completed or cancelled the transaction.
 
 ```
 - (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType {
