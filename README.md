@@ -33,7 +33,7 @@ Create a NSMutableDictionary and add all the Key Value Pairs.
     [dictionaryReq setObject:@"On" forKey:@"CancelButton"];
 ```
   
-##Process: Process Initialize Payment Transaction
+###Process: Process Initialize Payment Transaction
 
 Create HCMercuryHelper object and call the initializePaymentFromDictionary method with the NSMutalbeDictionary and merchant's password.
 
@@ -43,7 +43,7 @@ Create HCMercuryHelper object and call the initializePaymentFromDictionary metho
     [mgh initializePaymentFromDictionary:dictionaryReq andPassword:@"Y6@Mepyn!r0LsMNq"];
 ```
 
-##Parse: Parse the Response
+###Parse: Parse the Response
 
 Parse the Response using in the hcTransactionDidFinish delegate.
 
@@ -66,7 +66,7 @@ Approved transactions will have a CmdStatus equal to "Approved".
 }
 ```
 
-#Step 2: Display HostedCheckout
+##Step 2: Display HostedCheckout
 
 Display the HostedCheckout Web page in a UIWebView control. The URL ends with the PaymentID returned from the initialize payment response.
   
@@ -104,11 +104,11 @@ Listen to the shouldStartLoadWithRequest of the UIWebViewDelegate to determine i
 }
 ```
 
-#Step 3: Verify Payment
+##Step 3: Verify Payment
 
 To simplify our Web service calls we have created an HCMercuryHelper library to submit, process, and parse the responses.
 
-##Submit: Build Request with Key Value Pairs
+###Submit: Build Request with Key Value Pairs
   
 Create a NSMutableDictionary and add all the Key Value Pairs.
   
@@ -137,7 +137,7 @@ Create a NSMutableDictionary and add all the Key Value Pairs.
     [dictionaryReq setObject:@"123" forKey:@"CVV"];
 ```
   
-##Process: Process the Transaction
+###Process: Process the Transaction
 
 Create MercuryHelper object and call the transctionFromDictionary method with the NSMutalbeDictionary and merchant's password.
 
@@ -147,7 +147,7 @@ Create MercuryHelper object and call the transctionFromDictionary method with th
     [mgh transctionFromDictionary:dictionaryReq andPassword:@"xyz"];
 ```
 
-##Parse: Parse the Response
+###Parse: Parse the Response
 
 Parse the Response using in the transactionDidFinish delegate.
 
