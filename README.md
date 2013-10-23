@@ -120,10 +120,10 @@ Create a NSMutableDictionary and add all the Key Value Pairs.
   
 ###Process: Process the Transaction
 
-Create MercuryHelper object and call the verifyPaymentFromDictionary method with the NSMutalbeDictionary and merchant's password.
+Create HCMercuryHelper object and call the verifyPaymentFromDictionary method with the NSMutalbeDictionary and merchant's password.
 
 ```
-    MercuryHelper *mgh = [MercuryHelper new];
+    HCMercuryHelper *mgh = [HCMercuryHelper new];
     mgh.delegate = self;
     [mgh verifyPaymentFromDictionary:dictionaryReq andPassword:@"xyz"];
 ```
