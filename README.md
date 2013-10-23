@@ -117,7 +117,7 @@ XCode iOS application processing transactions to our Hosted Checkout platform.
     [dictionaryReq setObject:appDelegate.pid forKey:@"PaymentID"];
 ```
   
-###Process: Process the Transaction
+###Process: Transaction
 
 >Create HCMercuryHelper object and call the verifyPaymentFromDictionary method with the NSMutalbeDictionary and merchant's password.
 
@@ -127,7 +127,7 @@ XCode iOS application processing transactions to our Hosted Checkout platform.
     [mgh verifyPaymentFromDictionary:dictionaryReq andPassword:@"xyz"];
 ```
 
-###Parse: Parse the Response
+###Parse: Response
 
 >Parse the Response using in the hcTransactionDidFinish delegate.
 
