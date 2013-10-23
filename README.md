@@ -32,7 +32,7 @@ XCode iOS application processing transactions to our Hosted Checkout platform.
     [dictionaryReq setObject:@"On" forKey:@"CancelButton"];
 ```
   
-###Process: Process Initialize Payment Transaction
+###Process: Initialize Payment Transaction
 
 Create HCMercuryHelper object and call the initializePaymentFromDictionary method with the NSMutalbeDictionary and merchant's password.
 
@@ -42,7 +42,7 @@ Create HCMercuryHelper object and call the initializePaymentFromDictionary metho
     [mgh initializePaymentFromDictionary:dictionaryReq andPassword:@"Y6@Mepyn!r0LsMNq"];
 ```
 
-###Parse: Parse the Response
+###Parse: Response
 
 >Parse the Response using in the hcTransactionDidFinish delegate.
 
