@@ -10,7 +10,6 @@ There are 3 steps to process a payment with Mercury's Hosted Checkout platform.
 To simplify our web service calls we have created an HCMercuryHelper library to submit, process, and parse the responses.
 
 ###Submit: Build Request with Key Value Pairs
-  
 Create a NSMutableDictionary and add all the Key Value Pairs.
   
 ```objC
