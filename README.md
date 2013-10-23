@@ -37,7 +37,7 @@ Create a NSMutableDictionary and add all the Key Value Pairs.
 
 Create HCMercuryHelper object and call the initializePaymentFromDictionary method with the NSMutalbeDictionary and merchant's password.
 
-```
+```objC
     HCMercuryHelper *mgh = [HCMercuryHelper new];
     mgh.delegate = self;
     [mgh initializePaymentFromDictionary:dictionaryReq andPassword:@"Y6@Mepyn!r0LsMNq"];
@@ -49,7 +49,7 @@ Parse the Response using in the hcTransactionDidFinish delegate.
 
 Approved transactions will have a CmdStatus equal to "Approved".
 
-```
+```objC
 -(void) hcTransactionDidFinish:(NSDictionary *)result {
     
     if ([result objectForKey:@"CmdStatus"]
@@ -70,7 +70,7 @@ Approved transactions will have a CmdStatus equal to "Approved".
 
 Display the HostedCheckout Web page in a UIWebView control. The URL ends with the PaymentID returned from the initialize payment response.
   
-```
+```objC
     AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     
     [_viewWeb setOpaque:NO];
@@ -85,7 +85,7 @@ Display the HostedCheckout Web page in a UIWebView control. The URL ends with th
 
 Listen to the shouldStartLoadWithRequest of the UIWebViewDelegate to determine if the user completed or cancelled the transaction.
 
-```
+```objC
 - (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType {
     
     NSString *URLString = [[request URL] absoluteString];
@@ -112,7 +112,7 @@ To simplify our web service calls we have created an HCMercuryHelper library to 
   
 Create a NSMutableDictionary and add all the Key Value Pairs.
   
-```
+```objC
     NSMutableDictionary *dictionaryReq = [NSMutableDictionary new];
     [dictionaryReq setObject:@"018847445761734" forKey:@"MerchantID"];
     [dictionaryReq setObject:appDelegate.pid forKey:@"PaymentID"];
@@ -122,7 +122,7 @@ Create a NSMutableDictionary and add all the Key Value Pairs.
 
 Create HCMercuryHelper object and call the verifyPaymentFromDictionary method with the NSMutalbeDictionary and merchant's password.
 
-```
+```objC
     HCMercuryHelper *mgh = [HCMercuryHelper new];
     mgh.delegate = self;
     [mgh verifyPaymentFromDictionary:dictionaryReq andPassword:@"xyz"];
@@ -134,7 +134,7 @@ Parse the Response using in the hcTransactionDidFinish delegate.
 
 Approved transactions will have a CmdStatus equal to "Approved".
 
-```
+```objC
 -(void) hcTransactionDidFinish:(NSDictionary *)result {
     
     if ([result objectForKey:@"CmdStatus"]
