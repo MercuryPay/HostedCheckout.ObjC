@@ -5,11 +5,11 @@ XCode iOS application processing transactions to our Hosted Checkout platform.
 
 There are 3 steps to process a payment with Mercury's Housted Checkout platform.
 
-#Step 1: Initialize Payment
+##Step 1: Initialize Payment
 
 To simplify our Web service calls we have created an HCMercuryHelper library to submit, process, and parse the responses.
 
-##Submit: Build Request with Key Value Pairs
+###Submit: Build Request with Key Value Pairs
   
 Create a NSMutableDictionary and add all the Key Value Pairs.
   
