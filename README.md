@@ -3,7 +3,7 @@ HostedCheckout.ObjC
 
 XCode iOS application processing transactions to our Hosted Checkout platform.
 
-There are 3 steps to process a payment with Mercury's Hosted Checkout platform.
+>There are 3 steps to process a payment with Mercury's Hosted Checkout platform.
 
 ##Step 1: Initialize Payment
 
@@ -44,9 +44,9 @@ Create HCMercuryHelper object and call the initializePaymentFromDictionary metho
 
 ###Parse: Parse the Response
 
-Parse the Response using in the hcTransactionDidFinish delegate.
+>Parse the Response using in the hcTransactionDidFinish delegate.
 
-Approved transactions will have a CmdStatus equal to "Approved".
+>Approved transactions will have a CmdStatus equal to "Approved".
 
 ```objC
 -(void) hcTransactionDidFinish:(NSDictionary *)result {
