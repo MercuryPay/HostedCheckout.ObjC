@@ -1,11 +1,15 @@
-WebServices.ObjC
+HostedCheckout.ObjC
 ====================
 
-XCode iOS application processing transactions to our web services platform.
+XCode iOS application processing transactions to our Hosted Checkout platform.
 
-3 step process to integrate to Mercury Web Services.
+There are 3 steps to process a payment with Mercury's Housted Checkout platform.
 
-##Step 1: Build Request with Key Value Pairs
+#Step 1: Initialize Payment
+
+To simplify our Web service calls we have created an HCMercuryHelper library to submit, process, and parse the responses.
+
+##Submit: Build Request with Key Value Pairs
   
 Create a NSMutableDictionary and add all the Key Value Pairs.
   
@@ -34,7 +38,7 @@ Create a NSMutableDictionary and add all the Key Value Pairs.
     [dictionaryReq setObject:@"123" forKey:@"CVV"];
 ```
   
-##Step 2: Process the Transaction
+##Process: Process the Transaction
 
 Create MercuryHelper object and call the transctionFromDictionary method with the NSMutalbeDictionary and merchant's password.
 
@@ -44,7 +48,7 @@ Create MercuryHelper object and call the transctionFromDictionary method with th
     [mgh transctionFromDictionary:dictionaryReq andPassword:@"xyz"];
 ```
 
-##Step 3: Parse the Response
+##Parse: Parse the Response
 
 Parse the Response using in the transactionDidFinish delegate.
 
