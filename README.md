@@ -31,7 +31,6 @@ Create a NSMutableDictionary and add all the Key Value Pairs.
     [dictionaryReq setObject:@"#00A4E4" forKey:@"BackgroundColor"];
     [dictionaryReq setObject:@"#00A4E4" forKey:@"ButtonBackgroundColor"];
     [dictionaryReq setObject:@"On" forKey:@"CancelButton"];
-
 ```
   
 ##Process: Process the Transaction
