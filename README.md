@@ -45,12 +45,12 @@ Create HCMercuryHelper object and call the initializePaymentFromDictionary metho
 
 ##Parse: Parse the Response
 
-Parse the Response using in the transactionDidFinish delegate.
+Parse the Response using in the hcTransactionDidFinish delegate.
 
 Approved transactions will have a CmdStatus equal to "Approved".
 
 ```
--(void) transactionDidFinish:(NSDictionary *)result {
+-(void) hcTransactionDidFinish:(NSDictionary *)result {
     
     if ([result objectForKey:@"CmdStatus"]
       && [[result objectForKey:@"CmdStatus"] isEqualToString:@"Approved"]) {
