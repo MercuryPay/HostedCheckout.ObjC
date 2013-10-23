@@ -15,27 +15,23 @@ Create a NSMutableDictionary and add all the Key Value Pairs.
   
 ```
     NSMutableDictionary *dictionaryReq = [NSMutableDictionary new];
-    [dictionaryReq setObject:@"118725340908147" forKey:@"MerchantID"];
-    [dictionaryReq setObject:@"Credit" forKey:@"TranType"];
-    [dictionaryReq setObject:@"Sale" forKey:@"TranCode"];
-    [dictionaryReq setObject:@"12345" forKey:@"InvoiceNo"];
-    [dictionaryReq setObject:@"12345" forKey:@"RefNo"];
-    [dictionaryReq setObject:@"MercuryHelper 1.0.1" forKey:@"Memo"];
-    [dictionaryReq setObject:@"Allow" forKey:@"PartialAuth"];
-    [dictionaryReq setObject:@"MagneSafe" forKey:@"EncryptedFormat"];
-    [dictionaryReq setObject:@"Keyed" forKey:@"AccountSource"];
-    [dictionaryReq setObject:@"C756513CF498BBBF462FEDBFBF732DD8434ACB2B28325D0C7323204F639AC68FFD2769B49020E0CD" forKey:@"EncryptedBlock"];
-    [dictionaryReq setObject:@"9500030000040C20001C" forKey:@"EncryptedKey"];
+    [dictionaryReq setObject:@"018847445761734" forKey:@"MerchantID"];
+    [dictionaryReq setObject:@"Off" forKey:@"Keypad"];
+    [dictionaryReq setObject:@"123456" forKey:@"Invoice"];
+    [dictionaryReq setObject:@"3.05" forKey:@"TotalAmount"];
+    [dictionaryReq setObject:@"0.0" forKey:@"TaxAmount"];
+    [dictionaryReq setObject:@"Sale" forKey:@"TranType"];
     [dictionaryReq setObject:@"OneTime" forKey:@"Frequency"];
-    [dictionaryReq setObject:@"RecordNumberRequested" forKey:@"RecordNo"];
-    [dictionaryReq setObject:@"1.01" forKey:@"Purchase"];
-    [dictionaryReq setObject:@"test" forKey:@"Name"];
-    [dictionaryReq setObject:@"MPS Terminal" forKey:@"TerminalName"];
-    [dictionaryReq setObject:@"MPS Shift" forKey:@"ShiftID"];
-    [dictionaryReq setObject:@"test" forKey:@"OperatorID"];
-    [dictionaryReq setObject:@"4 Corporate SQ" forKey:@"Address"];
-    [dictionaryReq setObject:@"30329" forKey:@"Zip"];
-    [dictionaryReq setObject:@"123" forKey:@"CVV"];
+    [dictionaryReq setObject:@"Testing HostedCheckout.POS.ObjC" forKey:@"Memo"];
+    [dictionaryReq setObject:@"COMPLETED" forKey:@"ProcessCompleteUrl"];
+    [dictionaryReq setObject:@"CANCELED" forKey:@"ReturnUrl"];
+    [dictionaryReq setObject:@"#00A4E4" forKey:@"TotalAmountBackgroundColor"];
+    [dictionaryReq setObject:@"Swipe" forKey:@"DefaultSwipe"];
+    [dictionaryReq setObject:@"Custom" forKey:@"DisplayStyle"];
+    [dictionaryReq setObject:@"#00A4E4" forKey:@"BackgroundColor"];
+    [dictionaryReq setObject:@"#00A4E4" forKey:@"ButtonBackgroundColor"];
+    [dictionaryReq setObject:@"On" forKey:@"CancelButton"];
+
 ```
   
 ##Process: Process the Transaction
