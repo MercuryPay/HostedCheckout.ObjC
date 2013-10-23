@@ -34,7 +34,7 @@ XCode iOS application processing transactions to our Hosted Checkout platform.
   
 ###Process: Initialize Payment Transaction
 
-Create HCMercuryHelper object and call the initializePaymentFromDictionary method with the NSMutalbeDictionary and merchant's password.
+>Create HCMercuryHelper object and call the initializePaymentFromDictionary method with the NSMutalbeDictionary and merchant's password.
 
 ```objC
     HCMercuryHelper *mgh = [HCMercuryHelper new];
@@ -67,7 +67,7 @@ Create HCMercuryHelper object and call the initializePaymentFromDictionary metho
 
 ##Step 2: Display HostedCheckout
 
-Display the HostedCheckout Web page in a UIWebView control. The URL ends with the PaymentID returned from the initialize payment response.
+>Display the HostedCheckout Web page in a UIWebView control. The URL ends with the PaymentID returned from the initialize payment response.
   
 ```objC
     AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
@@ -82,7 +82,7 @@ Display the HostedCheckout Web page in a UIWebView control. The URL ends with th
     [_viewWeb loadRequest:requestObj];  
 ```
 
-Listen to the shouldStartLoadWithRequest of the UIWebViewDelegate to determine if the user completed or cancelled the transaction.
+>Listen to the shouldStartLoadWithRequest of the UIWebViewDelegate to determine if the user completed or cancelled the transaction.
 
 ```objC
 - (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType {
@@ -105,11 +105,11 @@ Listen to the shouldStartLoadWithRequest of the UIWebViewDelegate to determine i
 
 ##Step 3: Verify Payment
 
-To simplify our web service calls we have created an HCMercuryHelper library to submit, process, and parse the responses.
+>To simplify our web service calls we have created an HCMercuryHelper library to submit, process, and parse the responses.
 
 ###Submit: Build Request with Key Value Pairs
   
-Create a NSMutableDictionary and add all the Key Value Pairs.
+>Create a NSMutableDictionary and add all the Key Value Pairs.
   
 ```objC
     NSMutableDictionary *dictionaryReq = [NSMutableDictionary new];
@@ -119,7 +119,7 @@ Create a NSMutableDictionary and add all the Key Value Pairs.
   
 ###Process: Process the Transaction
 
-Create HCMercuryHelper object and call the verifyPaymentFromDictionary method with the NSMutalbeDictionary and merchant's password.
+>Create HCMercuryHelper object and call the verifyPaymentFromDictionary method with the NSMutalbeDictionary and merchant's password.
 
 ```objC
     HCMercuryHelper *mgh = [HCMercuryHelper new];
@@ -129,9 +129,9 @@ Create HCMercuryHelper object and call the verifyPaymentFromDictionary method wi
 
 ###Parse: Parse the Response
 
-Parse the Response using in the hcTransactionDidFinish delegate.
+>Parse the Response using in the hcTransactionDidFinish delegate.
 
-Approved transactions will have a CmdStatus equal to "Approved".
+>Approved transactions will have a CmdStatus equal to "Approved".
 
 ```objC
 -(void) hcTransactionDidFinish:(NSDictionary *)result {
