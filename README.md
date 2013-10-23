@@ -13,7 +13,7 @@ To simplify our web service calls we have created an HCMercuryHelper library to 
   
 Create a NSMutableDictionary and add all the Key Value Pairs.
   
-```
+```objC
     NSMutableDictionary *dictionaryReq = [NSMutableDictionary new];
     [dictionaryReq setObject:@"018847445761734" forKey:@"MerchantID"];
     [dictionaryReq setObject:@"Off" forKey:@"Keypad"];
