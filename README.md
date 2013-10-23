@@ -7,7 +7,7 @@ There are 3 steps to process a payment with Mercury's Housted Checkout platform.
 
 ##Step 1: Initialize Payment
 
-To simplify our Web service calls we have created an HCMercuryHelper library to submit, process, and parse the responses.
+To simplify our web service calls we have created an HCMercuryHelper library to submit, process, and parse the responses.
 
 ###Submit: Build Request with Key Value Pairs
   
@@ -106,7 +106,7 @@ Listen to the shouldStartLoadWithRequest of the UIWebViewDelegate to determine i
 
 ##Step 3: Verify Payment
 
-To simplify our Web service calls we have created an HCMercuryHelper library to submit, process, and parse the responses.
+To simplify our web service calls we have created an HCMercuryHelper library to submit, process, and parse the responses.
 
 ###Submit: Build Request with Key Value Pairs
   
