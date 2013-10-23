@@ -68,45 +68,40 @@ Approved transactions will have a CmdStatus equal to "Approved".
 
 #Step 2: Display HostedCheckout
 
-To simplify our Web service calls we have created an HCMercuryHelper library to submit, process, and parse the responses.
-
-##Submit: Build Request with Key Value Pairs
-  
-Create a NSMutableDictionary and add all the Key Value Pairs.
+Display the HostedCheckout Web page in a UIWebView control. The URL ends with the PaymentID returned from the initialize payment response.
   
 ```
-    NSMutableDictionary *dictionaryReq = [NSMutableDictionary new];
-    [dictionaryReq setObject:@"118725340908147" forKey:@"MerchantID"];
-    [dictionaryReq setObject:@"Credit" forKey:@"TranType"];
-    [dictionaryReq setObject:@"Sale" forKey:@"TranCode"];
-    [dictionaryReq setObject:@"12345" forKey:@"InvoiceNo"];
-    [dictionaryReq setObject:@"12345" forKey:@"RefNo"];
-    [dictionaryReq setObject:@"MercuryHelper 1.0.1" forKey:@"Memo"];
-    [dictionaryReq setObject:@"Allow" forKey:@"PartialAuth"];
-    [dictionaryReq setObject:@"MagneSafe" forKey:@"EncryptedFormat"];
-    [dictionaryReq setObject:@"Keyed" forKey:@"AccountSource"];
-    [dictionaryReq setObject:@"C756513CF498BBBF462FEDBFBF732DD8434ACB2B28325D0C7323204F639AC68FFD2769B49020E0CD" forKey:@"EncryptedBlock"];
-    [dictionaryReq setObject:@"9500030000040C20001C" forKey:@"EncryptedKey"];
-    [dictionaryReq setObject:@"OneTime" forKey:@"Frequency"];
-    [dictionaryReq setObject:@"RecordNumberRequested" forKey:@"RecordNo"];
-    [dictionaryReq setObject:@"1.01" forKey:@"Purchase"];
-    [dictionaryReq setObject:@"test" forKey:@"Name"];
-    [dictionaryReq setObject:@"MPS Terminal" forKey:@"TerminalName"];
-    [dictionaryReq setObject:@"MPS Shift" forKey:@"ShiftID"];
-    [dictionaryReq setObject:@"test" forKey:@"OperatorID"];
-    [dictionaryReq setObject:@"4 Corporate SQ" forKey:@"Address"];
-    [dictionaryReq setObject:@"30329" forKey:@"Zip"];
-    [dictionaryReq setObject:@"123" forKey:@"CVV"];
-```
-  
-##Process: Process the Transaction
+    AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+    
+    [_viewWeb setOpaque:NO];
+    [_viewWeb setBackgroundColor:[UIColor clearColor]];
+    
+    NSString *pidURL = [NSString stringWithFormat:@"https://hc.mercurydev.net/CheckoutPOSiframe.aspx?pid=%@", appDelegate.pid];
 
-Create MercuryHelper object and call the transctionFromDictionary method with the NSMutalbeDictionary and merchant's password.
+    NSURL *url = [NSURL URLWithString:pidURL];
+    NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
+    [_viewWeb loadRequest:requestObj];  
+```
+
+Listen to the shouldStartLoadWithRequest of the UIWebViewDelegate to determine if the user completed the transaction or cancelled the request.
 
 ```
-    MercuryHelper *mgh = [MercuryHelper new];
-    mgh.delegate = self;
-    [mgh transctionFromDictionary:dictionaryReq andPassword:@"xyz"];
+- (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType {
+    
+    NSString *URLString = [[request URL] absoluteString];
+    
+    if ([URLString hasSuffix: @"COMPLETED"]) {
+        [self performSegueWithIdentifier:@"verifySegue" sender:self];
+        return NO;
+    }
+    
+    if ([URLString hasSuffix: @"CANCELED"]) {
+        [self performSegueWithIdentifier:@"cancelSegue" sender:self];
+    }
+    
+    return YES;
+    
+}
 ```
 
 ##Parse: Parse the Response
