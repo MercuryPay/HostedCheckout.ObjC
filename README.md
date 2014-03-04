@@ -15,6 +15,7 @@ XCode iOS application processing transactions to our Hosted Checkout platform.
 ```objC
     NSMutableDictionary *dictionaryReq = [NSMutableDictionary new];
     [dictionaryReq setObject:@"018847445761734" forKey:@"MerchantID"];
+    [dictionaryReq setObject:@"02" forKey:@"LaneID"];
     [dictionaryReq setObject:@"Off" forKey:@"Keypad"];
     [dictionaryReq setObject:@"123456" forKey:@"Invoice"];
     [dictionaryReq setObject:@"3.05" forKey:@"TotalAmount"];
