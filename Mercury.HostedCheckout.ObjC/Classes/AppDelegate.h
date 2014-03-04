@@ -32,6 +32,7 @@
 @property (strong, nonatomic) NSString *token;
 @property (strong, nonatomic) NSString *transPostTime;
 @property (strong, nonatomic) NSString *tranactionID;
+@property (strong, nonatomic) NSString *laneID;
 
 -(void) reset;
 

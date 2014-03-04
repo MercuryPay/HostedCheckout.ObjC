@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>99CF76A3-7C84-4417-B892-627D009C69F6</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Mercury Hosted Checkout</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>A31DA307-5CF1-48F0-9D17-EC17733C58FB</key>
+		<string>https://github.com/MercuryPay/HostedCheckout.ObjC.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Mercury Hosted Checkout.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>A31DA307-5CF1-48F0-9D17-EC17733C58FB</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/MercuryPay/HostedCheckout.ObjC.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>A31DA307-5CF1-48F0-9D17-EC17733C58FB</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>A31DA307-5CF1-48F0-9D17-EC17733C58FB</string>
+			<key>IDESourceControlWCCName</key>
+			<string>HostedCheckout</string>
+		</dict>
+	</array>
+</dict>
+</plist>

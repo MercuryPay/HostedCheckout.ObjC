@@ -64,6 +64,7 @@
     self.token = @"";
     self.transPostTime = @"";
     self.tranactionID = @"";
+    self.laneID = @"";
 }
 
 
