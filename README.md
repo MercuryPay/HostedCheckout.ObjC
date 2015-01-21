@@ -1,4 +1,4 @@
-HostedCheckout.ObjC
+HostedCheckout.ObjC [iPad Only]
 ====================
 
 XCode iOS application processing transactions to our Hosted Checkout platform.
