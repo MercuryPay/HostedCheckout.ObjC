@@ -1,15 +1,19 @@
 HostedCheckout.ObjC [iPad Only]
 ====================
 
+<a href="https://developer.vantiv.com/?utm_campaign=githubcta&utm_medium=hyperlink&utm_source=github&utm_content=gotquestions">Got questions? Connect with our experts on Vantiv ONE.</a>
+
+<a href="https://developer.vantiv.com/?utm_campaign=githubcta&utm_medium=hyperlink&utm_source=github&utm_content=codingforcommerce">Are you coding for commerce? Connect with our experts on Vantiv ONE.</a>
+
 XCode iOS application processing transactions to our Hosted Checkout platform.
 
 >There are 3 steps to process a payment with Mercury's Hosted Checkout platform.
 
-##Step 1: Initialize Payment
+## Step 1: Initialize Payment
 
 >To simplify our web service calls we have created an HCMercuryHelper library to **submit**, **process**, and **parse** the responses.
 
-###Submit: Build Request with Key Value Pairs
+### Submit: Build Request with Key Value Pairs
 >Create a NSMutableDictionary and add all the Key Value Pairs.
   
 ```objC
@@ -33,7 +37,7 @@ XCode iOS application processing transactions to our Hosted Checkout platform.
     [dictionaryReq setObject:@"On" forKey:@"CancelButton"];
 ```
   
-###Process: Initialize Payment Transaction
+### Process: Initialize Payment Transaction
 
 >Create HCMercuryHelper object and call the initializePaymentFromDictionary method with the NSMutalbeDictionary and merchant's password.
 
@@ -43,7 +47,7 @@ XCode iOS application processing transactions to our Hosted Checkout platform.
     [mgh initializePaymentFromDictionary:dictionaryReq andPassword:@"Y6@Mepyn!r0LsMNq"];
 ```
 
-###Parse: Response
+### Parse: Response
 
 >Parse the Response using in the hcTransactionDidFinish delegate.
 
@@ -66,7 +70,7 @@ XCode iOS application processing transactions to our Hosted Checkout platform.
 }
 ```
 
-##Step 2: Display HostedCheckout
+## Step 2: Display HostedCheckout
 
 >Display the HostedCheckout Web page in a UIWebView control. The URL ends with the PaymentID returned from the initialize payment response.
   
@@ -104,11 +108,11 @@ XCode iOS application processing transactions to our Hosted Checkout platform.
 }
 ```
 
-##Step 3: Verify Payment
+## Step 3: Verify Payment
 
 >To simplify our web service calls we have created an HCMercuryHelper library to **submit**, **process**, and **parse** the responses.
 
-###Submit: Build Request with Key Value Pairs
+### Submit: Build Request with Key Value Pairs
   
 >Create a NSMutableDictionary and add all the Key Value Pairs.
   
@@ -118,7 +122,7 @@ XCode iOS application processing transactions to our Hosted Checkout platform.
     [dictionaryReq setObject:appDelegate.pid forKey:@"PaymentID"];
 ```
   
-###Process: Transaction
+### Process: Transaction
 
 >Create HCMercuryHelper object and call the verifyPaymentFromDictionary method with the NSMutalbeDictionary and merchant's password.
 
@@ -128,7 +132,7 @@ XCode iOS application processing transactions to our Hosted Checkout platform.
     [mgh verifyPaymentFromDictionary:dictionaryReq andPassword:@"xyz"];
 ```
 
-###Parse: Response
+### Parse: Response
 
 >Parse the Response using in the hcTransactionDidFinish delegate.
 
@@ -151,7 +155,7 @@ XCode iOS application processing transactions to our Hosted Checkout platform.
 }
 ```
 
-###©2013 Mercury Payment Systems, LLC - all rights reserved.
+##### ©2013 Mercury Payment Systems, LLC - all rights reserved.
 
 Disclaimer:
 This software and all specifications and documentation contained herein or provided to you hereunder (the "Software") are provided free of charge strictly on an "AS IS" basis. No representations or warranties are expressed or implied, including, but not limited to, warranties of suitability, quality, merchantability, or fitness for a particular purpose (irrespective of any course of dealing, custom or usage of trade), and all such warranties are expressly and specifically disclaimed. Mercury Payment Systems shall have no liability or responsibility to you nor any other person or entity with respect to any liability, loss, or damage, including lost profits whether foreseeable or not, or other obligation for any cause whatsoever, caused or alleged to be caused directly or indirectly by the Software. Use of the Software signifies agreement with this disclaimer notice.
